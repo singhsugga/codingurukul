@@ -16,7 +16,9 @@ import {AngularFireModule} from '@angular/fire'
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { ServicesComponent } from './components/services/services.component';
 import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
-import { FooterComponent } from './components/footer/footer.component'
+import { FooterComponent } from './components/footer/footer.component';
+import { EventDetailsComponent } from './components/event-details/event-details.component';
+import { EventListComponent } from './components/event-list/event-list.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,9 @@ import { FooterComponent } from './components/footer/footer.component'
     EventsComponent,
     ServicesComponent,
     HowItWorksComponent,
-    FooterComponent
+    FooterComponent,
+    EventDetailsComponent,
+    EventListComponent
   ],
   imports: [
   BrowserModule,
