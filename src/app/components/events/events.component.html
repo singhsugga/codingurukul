@@ -1,0 +1,33 @@
+
+<div class="container-fluid pb-5 mt-1" style="background: #F2EFF1; border-top-left-radius: 900000%;border-bottom-right-radius: 6000%">
+    <br><br><br>  
+  <div class="row">
+       
+      <div class="col-md-10 offset-md-1">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-3">
+              <!-- Card -->
+              <div><br><br><br></div>
+                  <h2 class=" google-font h2-responsive"><b>Explore Our Events/Meetups</b></h2>
+                  <p>We belive in sharing knowledge and enlighten the world</p>
+                  <a href="#" class=""><b>Explore all events <i class="fas fa-arrow-right"></i></b></a>
+              <!-- Card -->
+              </div>
+              <div class="col-md-4" *ngFor="let event of events | slice:0:2; let i=index">
+                  <!-- Card -->
+                    <div class="card mt-3">
+                        <img class="card-img-top" style="height:170px;" src="https://storage.googleapis.com/gweb-cloudnext19.appspot.com/event-assets/sf/sponsor-block.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h6 class="card-title google-font h6-responsive"><a>{{event.event_name }}</a></h6>
+                          <p class="google-font text-muted mt-1"><i class="far fa-calendar-alt"></i> {{event.event_date }}</p>
+                          <a href="#" class=""><b>Know More <i class="fas fa-arrow-right"></i></b></a>
+                        </div>
+                      </div>
+                      <!-- Card -->
+                  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
