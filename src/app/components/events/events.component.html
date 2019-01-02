@@ -17,7 +17,7 @@
               <div class="col-md-4" *ngFor="let event of events | slice:0:2; let i=index">
                   <!-- Card -->
                     <div class="card mt-3">
-                        <img class="card-img-top" style="height:170px;" src="https://storage.googleapis.com/gweb-cloudnext19.appspot.com/event-assets/sf/sponsor-block.png" alt="Card image cap">
+                        <img class="card-img-top" style="height:170px;" src="{{event.event_image}}" alt="Card image cap">
                         <div class="card-body">
                           <h6 class="card-title google-font h6-responsive"><a>{{event.event_name }}</a></h6>
                           <p class="google-font text-muted mt-1"><i class="far fa-calendar-alt"></i> {{event.event_date }}</p>
